@@ -1,0 +1,80 @@
+body {
+  background: white;
+}
+
+.block {
+  /*Box properties*/
+  height: 600px;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+  /* Box animation */
+}
+
+.block.foward-state {
+  -webkit-animation-name: slideframe;
+          animation-name: slideframe;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.block.reverse-state {
+  -webkit-animation-name: slideframe;
+          animation-name: slideframe;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  animation-direction: reverse;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.login {
+  margin-top: auto;
+  position: relative;
+}
+
+@-webkit-keyframes slideframe {
+  0% {
+    width: 40%;
+  }
+  100% {
+    width: 100%;
+    background: teal;
+  }
+}
+
+@keyframes slideframe {
+  0% {
+    width: 40%;
+  }
+  100% {
+    width: 100%;
+    background: teal;
+  }
+}
+/*# sourceMappingURL=style.css.map */

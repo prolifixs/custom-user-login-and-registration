@@ -1,0 +1,52 @@
+body{
+    background: white;
+}
+.block{
+    /*Box properties*/
+    height: 600px;
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.30);
+    /* Box animation */
+    &.foward-state{
+        animation-name: slideframe;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+    }
+    &.reverse-state{
+        animation-name: slideframe;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: reverse;
+        animation-fill-mode: backwards;
+        animation-play-state: running;
+    }
+}
+
+.login{
+    margin-top: auto;
+    position: relative;
+}
+
+@keyframes slideframe{
+    0%{
+        width:40%;
+    }
+        
+    100%{
+        width:100%;
+        background: teal;
+    }
+        
+}
