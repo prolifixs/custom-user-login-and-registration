@@ -10,7 +10,8 @@ body{
     background-color: white;
     z-index: 1;
     position: absolute;
-    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.30);
+    box-shadow: 24px 1px 35px -33px rgba(0,0,0,1);
+    /* box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.30); */
     /* Box animation */
     &.foward-state{
         animation-name: slideframe;
@@ -39,6 +40,14 @@ body{
     position: relative;
 }
 
+/* loading-bar styling (from innerHTML dom) */
+#loading-bar{
+    height: 6px;
+    margin-top: 500px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 @keyframes slideframe{
     0%{
         width:40%;
@@ -46,7 +55,7 @@ body{
         
     100%{
         width:100%;
-        background: teal;
+        background: rgb(255, 255, 255);
     }
         
 }

@@ -20,7 +20,7 @@ function progressBar(){
     var width = 1;
     var id = setInterval(frame, 50);
     function frame() {
-        data.innerHTML = '<div class="progress">'+
+        data.innerHTML = '<div class="progress" id="loading-bar">'+ 
                     '<div class="progress-bar"'+
                     'role="progressbar"'+
                     'style="width: '+width+'%"'+

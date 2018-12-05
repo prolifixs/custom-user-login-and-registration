@@ -11,8 +11,9 @@ body {
   background-color: white;
   z-index: 1;
   position: absolute;
-  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 24px 1px 35px -33px black;
+          box-shadow: 24px 1px 35px -33px black;
+  /* box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.30); */
   /* Box animation */
 }
 
@@ -58,13 +59,21 @@ body {
   position: relative;
 }
 
+/* loading-bar styling (from innerHTML dom) */
+#loading-bar {
+  height: 6px;
+  margin-top: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
 @-webkit-keyframes slideframe {
   0% {
     width: 40%;
   }
   100% {
     width: 100%;
-    background: teal;
+    background: white;
   }
 }
 
@@ -74,7 +83,7 @@ body {
   }
   100% {
     width: 100%;
-    background: teal;
+    background: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
